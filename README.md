@@ -2,7 +2,7 @@
 
 Heller-Dirac is the working repository for the gate-minimality branch of the Heller research program: spin-frame, Dirac/ADE, active-set, and polarization-compatibility structures around A-type singularities.
 
-The current repo state is deliberately modest. It captures research notes, convention gates, and proof sketches. It does not claim a completed theorem beyond the explicitly scoped A1 gate-minimality result once its mechanical amendments are incorporated.
+The current repo state is deliberately modest. This is a structural-sketch track with one A1 theorem-track amendment set. It captures research notes, convention gates, and proof sketches. It does not claim a completed theorem beyond the explicitly scoped A1 gate-minimality result once its mechanical amendments are incorporated.
 
 ## Current canonical lane
 
@@ -23,7 +23,7 @@ It currently contains:
 
 This repository may currently claim:
 
-- A1 gate minimality has a v3 amendment set that resolves mechanical review issues around the closed-embedding citation, terminal-object phrasing, and Spin^c note.
+- A1 gate minimality has a v3 amendment set that resolves mechanical review issues around the closed-embedding citation, terminal-object phrasing, and Spin-c note.
 - The A2 extension is not yet a theorem; it is convention-dependent.
 - The A1 to An extension requires an explicit framework choice about the spatial target, active-set dimension/type, and the invariant replacing or generalizing the A1 symplectic condition.
 
@@ -63,4 +63,4 @@ No A2 theorem should be written until this issue is resolved.
 make validate
 ```
 
-The validator checks that the gate-minimality notes exist and that the A2 sketch remains explicitly pre-proof/convention-gated.
+The validator checks file presence, cross-document references, convention labels, numerical anchors, default recommendation consistency, C-6 through C-9 open/falsifier status, and non-claims.
