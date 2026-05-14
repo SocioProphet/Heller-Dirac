@@ -1,6 +1,8 @@
 # A1 Gate Minimality - v3 Amendments
 
 Status: v3 amendment set
+Track: A1 theorem-track amendment hygiene; does not create A2 theorem status
+Convention used: A1 spatial target Spin(3) ~= SU(2); active-set invariant is the A1 symplectic Q_A
 Scope: mechanical refinements to the A1 gate-minimality note
 Substantive theorem content: unchanged for T1 and T2
 
