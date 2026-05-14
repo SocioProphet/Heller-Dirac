@@ -1,7 +1,10 @@
 # A2 Gate Minimality - Structural Sketch
 
 Status: pre-proof sketch
-Proposed tracker: Issue #6
+Track: structural-sketch track, not theorem track
+Proposed tracker: Issue #6 (GitHub issue #1 in this repo)
+Convention status: unresolved; path alpha versus path beta remains open
+Default recommendation: path beta + SU(3) + cubic invariant
 Scope: A2 and An convention gate for the Heller-Dirac gate-minimality program
 
 ## Summary
@@ -15,6 +18,20 @@ The A1 proof structure can be extended only after the framework specifies three 
 3. what invariant replaces or generalizes the A1 symplectic condition.
 
 Until those choices are fixed, A2 is not theorem-track. It is a convention-gated roadmap.
+
+## Numerical anchors and precision
+
+The numerical and structural anchors in this sketch are exact unless explicitly stated otherwise:
+
+- A1 local monodromy group: Z/2, exact.
+- An local monodromy group under path beta: Z/(n+1), exact as a convention-level ADE anchor.
+- A2 path-beta central class: Z/3, exact.
+- A2 path-beta candidate group: SU(3), exact under the recommended convention.
+- A2 path-beta active space: C^3 defining representation, exact under the recommended convention.
+- Path-alpha active representation: spin n/2 representation of SU(2), exact as representation-theory convention.
+- Frobenius-Schur sign branch under path alpha: half-integer spin is symplectic, integer spin is orthogonal, exact as stated.
+
+No numerical approximation is used in this sketch.
 
 ## A.1 What changes from A1 to An
 
@@ -128,10 +145,37 @@ This proof skeleton is conditional on the convention. It must not be presented a
 
 ## A.8 Open subclaims
 
-- C-6: Path alpha versus path beta convention decision. The framework must choose an extension path before T_n is statable.
-- C-7: Closed connected subgroups of SU(n+1). For SU(3), classify the connected closed subgroups and verify which are eliminated by the chosen invariant.
-- C-8: Cubic-invariant formulation of condition (v) for A2. State precisely what it means for rho_active to preserve the symmetric trilinear invariant and how this relates to the framework's polarization datum.
-- C-9: Frobenius-Schur sign for spin n/2 representations under path alpha. Verify the orthogonal/symplectic alternation and the resulting replacement for condition (v).
+### C-6: path alpha versus path beta convention decision
+
+Status: open.
+
+Convention dependency: survives every convention. It is the parent decision.
+
+Falsifier: any draft that states T_n or A2 minimality without first selecting path alpha or path beta fails this subclaim.
+
+### C-7: closed connected subgroups of SU(n+1)
+
+Status: open.
+
+Convention dependency: target-dependent. Under path beta for A2, the target is SU(3). Under path alpha, this must be rewritten as an SU(2) representation-theory obligation.
+
+Falsifier: a proposed SU(3) proof that does not eliminate SO(3), SU(2), and U(2), or that uses an incomplete subgroup list, fails this subclaim.
+
+### C-8: cubic-invariant formulation of condition (v) for A2
+
+Status: open.
+
+Convention dependency: path-beta-specific. It is load-bearing only if SU(3) plus cubic invariant is adopted.
+
+Falsifier: if the framework adopts path beta but cannot express the cubic invariant in the framework's polarization language, the SU(3)+cubic theorem path fails.
+
+### C-9: Frobenius-Schur sign for spin n/2 representations
+
+Status: open.
+
+Convention dependency: path-alpha-specific. It is load-bearing only if the framework preserves Spin(3) and uses SU(2) representation dimension/sign as the An variation.
+
+Falsifier: if the orthogonal/symplectic alternation does not match the active-set invariant required by the framework, the path-alpha theorem path fails.
 
 ## Non-claims
 
