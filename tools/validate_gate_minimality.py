@@ -33,11 +33,6 @@ def require_contains(label: str, text: str, needle: str) -> None:
         raise SystemExit(f"ERROR: {label} missing required text: {needle!r}")
 
 
-def require_all_contains(label: str, text: str, needles: list[str]) -> None:
-    for needle in needles:
-        require_contains(label, text, needle)
-
-
 def validate_file_presence() -> dict[str, str]:
     return {name: read(path) for name, path in REQUIRED_FILES.items()}
 
@@ -118,7 +113,8 @@ def validate_non_claims(texts: dict[str, str]) -> None:
     boundary = texts["claim_boundary"]
     lowered = boundary.lower().replace("-", " ")
     for non_claim in REQUIRED_CLAIM_BOUNDARY_NON_CLAIMS:
-        if non_claim.replace("-", " ") not in lowered:
+        expected = non_claim.lower().replace("-", " ")
+        if expected not in lowered:
             raise SystemExit(f"ERROR: claim-boundary.md missing non-claim: {non_claim}")
     require_contains("A2 sketch", texts["a2"], "This note does not prove A2 minimality.")
     require_contains("A2 sketch", texts["a2"], "This proof skeleton is conditional on the convention.")
