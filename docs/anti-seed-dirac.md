@@ -43,6 +43,24 @@ The constraint from `[HG-MTH-005 @ 988307215ad38ccb16514311222184a1b757752b]` ap
 
 Computing on canonical Heller-Dirac fixtures, such as a circle spectral triple or basic Dirac examples, is apparatus validation. It is fixture-grade unless a later PR proves a stronger claim.
 
+## A-HD-FND-001 — Reference surface is not reproof
+
+Heller-Dirac foundational identifiers `HD-FND-*` canonicalize reference surfaces for standard definitions and cited results. They do not reprove those results and do not convert them into new Heller-Dirac theorems.
+
+Failure mode:
+
+```text
+A downstream artifact cites HD-FND-004, HD-FND-005, HD-FND-006, HD-FND-007, HD-FND-008, or HD-FND-009 as if Heller-Dirac had proved those classical results.
+```
+
+Correct statement:
+
+```text
+HD-FND-* identifiers make standard reference results citable by stable identifier. New claims extending or modifying those results require their own HD-MTH-* or HD-FND-* specification and anti-seed entry.
+```
+
+This discipline is permanent.
+
 ## Versioning
 
-This register is `HD-AS-REGISTER-001 v1.0`. Entries are append-only modulo structural-elimination closure.
+This register is `HD-AS-REGISTER-001 v1.1`. Entries are append-only modulo structural-elimination closure.
