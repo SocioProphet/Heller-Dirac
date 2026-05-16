@@ -12,12 +12,12 @@ Connes' reconstruction theorem states, in essence, that a commutative spectral t
 Under those hypotheses:
 
 ```text
-A = C^[4m∞[0m(M)
+A = C^infty(M)
 H = L^2(M, S)
 D = canonical Dirac operator
 ```
 
-where `M` is a compact Riemannian spin manifold and `S` its spinor bundle.
+where `M` is a compact Riemannian spin manifold and `S` is its spinor bundle.
 
 ## Reading
 
