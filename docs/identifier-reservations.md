@@ -1,23 +1,25 @@
 # Heller-Dirac Identifier Reservations
 
-Status: reservation registry.
-Claim level: governance / namespace control only.
+Status: reservation and activation registry.
+Claim level: governance / namespace control.
 
-This document reserves the `HD-*` namespace for Heller-Dirac scaffold objects. Reservation prevents collision; it does not make a reserved object active.
+This document controls the `HD-*` namespace for Heller-Dirac scaffold objects. Active identifiers have dedicated files and may be cited by downstream consumers at a pinned commit.
 
 ## Foundational vocabulary — HD-FND
 
-| Identifier range | Reserved scope |
-|---|---|
-| `HD-FND-001..020` | spectral triple, real structure, grading, KO-dimension, reconstruction-theorem vocabulary, modular representation vocabulary |
-
-Initial named reservations:
-
-- `HD-FND-001` — spectral triple base structure `(A, H, D)`
-- `HD-FND-002` — real spectral triple and KO-dimension
-- `HD-FND-003` — grading and even/odd structure
-- `HD-FND-004` — Connes reconstruction-theorem vocabulary
-- `HD-FND-005` — GNS representation interface
+| Identifier | Scope | Status | Path |
+|---|---|---|---|
+| `HD-FND-001` | spectral triple base structure `(A, H, D)` | active | `docs/foundations/HD-FND-001-spectral-triple.md` |
+| `HD-FND-002` | grading and even spectral triples | active | `docs/foundations/HD-FND-002-grading.md` |
+| `HD-FND-003` | real structure and KO-dimension | active | `docs/foundations/HD-FND-003-real-structure.md` |
+| `HD-FND-004` | Connes reconstruction theorem reference | active | `docs/foundations/HD-FND-004-connes-reconstruction.md` |
+| `HD-FND-005` | Connes distance formula reference | active | `docs/foundations/HD-FND-005-distance-formula.md` |
+| `HD-FND-006` | spectral action principle reference | active | `docs/foundations/HD-FND-006-spectral-action.md` |
+| `HD-FND-007` | Tomita-Takesaki modular operator and flow | active | `docs/foundations/HD-FND-007-modular-operator.md` |
+| `HD-FND-008` | KMS condition | active | `docs/foundations/HD-FND-008-kms.md` |
+| `HD-FND-009` | Bisognano-Wichmann correspondence | active | `docs/foundations/HD-FND-009-bisognano-wichmann.md` |
+| `HD-FND-010` | Hopf-algebra action on a spectral triple | active | `docs/foundations/HD-FND-010-hopf-action.md` |
+| `HD-FND-011..020` | future foundational vocabulary | reserved | future PR |
 
 ## Hopf scaffold — HD-HA
 
@@ -74,15 +76,12 @@ Initial named reservations:
 
 ## Fixtures — HD-EX
 
-| Identifier range | Reserved scope |
-|---|---|
-| `HD-EX-001..005` | canonical examples and fixtures |
-
-Initial named reservations:
-
-- `HD-EX-001` — circle spectral triple fixture
-- `HD-EX-002` — free Dirac operator fixture
-- `HD-EX-003` — finite spectral triple toy fixture
+| Identifier | Scope | Status | Path |
+|---|---|---|---|
+| `HD-EX-001` | circle spectral triple fixture | active | `docs/fixtures/HD-EX-001-circle-spectral-triple.md` |
+| `HD-EX-002` | free Dirac operator fixture | reserved | future PR |
+| `HD-EX-003` | Hopf-equivariant spectral triple fixture | reserved | future PR |
+| `HD-EX-004..005` | future fixtures | reserved | future PR |
 
 ## Methodology — HD-MTH
 
@@ -107,6 +106,7 @@ Active anti-seed identifiers are defined in `docs/anti-seed-dirac.md`:
 - `A-HD-SP-001`
 - `A-HD-MTH-001`
 - `A-HD-EX-001`
+- `A-HD-FND-001`
 
 ## Activation rule
 
