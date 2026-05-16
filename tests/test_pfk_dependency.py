@@ -20,6 +20,18 @@ CANONICAL_SCHEMA_NAMES = {
     "proof_artifact.schema.json",
     "calibration_bundle.schema.json",
 }
+HD_FND_FILES = {
+    "HD-FND-001-spectral-triple.md",
+    "HD-FND-002-grading.md",
+    "HD-FND-003-real-structure.md",
+    "HD-FND-004-connes-reconstruction.md",
+    "HD-FND-005-distance-formula.md",
+    "HD-FND-006-spectral-action.md",
+    "HD-FND-007-modular-operator.md",
+    "HD-FND-008-kms.md",
+    "HD-FND-009-bisognano-wichmann.md",
+    "HD-FND-010-hopf-action.md",
+}
 
 
 class TestPFKDependency(unittest.TestCase):
@@ -37,11 +49,27 @@ class TestPFKDependency(unittest.TestCase):
             self.assertIn(token, readme)
         self.assertIn("HD-FND-001", reservations)
         self.assertIn("A-HD-NC-001", reservations)
+        self.assertIn("A-HD-FND-001", reservations)
 
     def test_anti_seed_register_exists(self) -> None:
         text = (ROOT / "docs" / "anti-seed-dirac.md").read_text(encoding="utf-8")
-        for token in ["A-HD-NC-001", "A-HD-TM-001", "A-HD-FT-001", "A-HD-HA-001", "A-HD-SP-001"]:
+        for token in ["A-HD-NC-001", "A-HD-TM-001", "A-HD-FT-001", "A-HD-HA-001", "A-HD-SP-001", "A-HD-FND-001"]:
             self.assertIn(token, text)
+
+    def test_hd_fnd_foundational_content_exists(self) -> None:
+        foundations = ROOT / "docs" / "foundations"
+        self.assertTrue(foundations.exists(), "docs/foundations must exist")
+        found = {path.name for path in foundations.glob("HD-FND-*.md")}
+        missing = sorted(HD_FND_FILES - found)
+        self.assertFalse(missing, f"Missing HD-FND files: {missing}")
+
+    def test_hd_ex_001_fixture_exists(self) -> None:
+        fixture = ROOT / "docs" / "fixtures" / "HD-EX-001-circle-spectral-triple.md"
+        self.assertTrue(fixture.exists(), "HD-EX-001 circle spectral triple fixture missing")
+        text = fixture.read_text(encoding="utf-8")
+        self.assertIn("HD-EX-001", text)
+        self.assertIn("HD-FND-005", text)
+        self.assertIn("round geodesic metric", text)
 
     def test_no_local_canonical_schema_shadowing(self) -> None:
         local_schemas = ROOT / "schemas"
