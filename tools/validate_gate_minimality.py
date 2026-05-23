@@ -5,6 +5,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 DOCS = ROOT / "docs" / "gate-minimality"
+REALIZATION = ROOT / "docs" / "realization-question"
 
 FILES = {
     "readme": DOCS / "README.md",
@@ -14,6 +15,8 @@ FILES = {
     "c8": DOCS / "c8-cubic-invariant-condition.md",
     "boundary": DOCS / "claim-boundary.md",
     "audit": DOCS / "stale-branch-audit.md",
+    "realization_readme": REALIZATION / "README.md",
+    "realization_question": REALIZATION / "question.md",
 }
 
 
@@ -38,6 +41,8 @@ def main() -> None:
     c8 = texts["c8"]
     boundary = texts["boundary"]
     audit = texts["audit"]
+    realization_readme = texts["realization_readme"]
+    realization_question = texts["realization_question"]
 
     for filename in [
         "a1-gate-minimality-v3-amendments.md",
@@ -77,6 +82,20 @@ def main() -> None:
 
     need("C7 redirect", c7, "docs/gate-minimality/c7-su3-subgroup-classification-scope.md")
     need("C8 redirect", c8, "docs/gate-minimality/c8-cubic-invariant-condition.md")
+
+    for label, text in [("realization README", realization_readme), ("realization question", realization_question)]:
+        need(label, text, "Relocated to Heller-Einstein")
+        need(label, text, "SocioProphet/Heller-Einstein")
+        need(label, text, "typed-interface ontology")
+        need(label, text, "redirect stub")
+        need(label, text, "current content")
+
+    need("realization README", realization_readme, "docs/realization-question/README.md")
+    need("realization question", realization_question, "docs/realization-question/question.md")
+    need("realization question", realization_question, "HE-INT-*")
+    need("realization question", realization_question, "HE-PLC-*")
+    need("realization question", realization_question, "HE-PROJ-*")
+    need("realization question", realization_question, "HE-SH-*")
 
     need("A1", a1, "A1 unaffected by A2 path-beta adoption")
     need("A1", a1, "Spin(3) ~= SU(2)")
