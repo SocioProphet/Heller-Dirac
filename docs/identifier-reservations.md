@@ -23,6 +23,7 @@ Claim level: governance / namespace control.
 | `HD-HA-004` | active | `docs/hopf-scaffold/HD-HA-004-hopf-cyclic-cohomology.md` |
 | `HD-HA-005` | active | `docs/hopf-scaffold/HD-HA-005-birkhoff-decomposition.md` |
 | `HD-HA-006` | active | `docs/hopf-scaffold/HD-HA-006-riemann-hilbert.md` |
+| `HD-FT-001` | active | `docs/field-theory/HD-FT-001-born-rule-positive-norm.md` |
 | `HD-SP-001` | active | `docs/spectral/HD-SP-001-spectral-zeta.md` |
 | `HD-SP-002` | active | `docs/spectral/HD-SP-002-stieltjes-constants.md` |
 | `HD-SP-003` | active | `docs/spectral/HD-SP-003-heat-kernel.md` |
@@ -40,7 +41,7 @@ Claim level: governance / namespace control.
 - `HD-FND-011..020`
 - `HD-HA-007..010`
 - `HD-TM-001..010`
-- `HD-FT-001..010`
+- `HD-FT-002..010`
 - `HD-SP-007..010`
 - `HD-EX-003..005`
 - `HD-MTH-004..005`
