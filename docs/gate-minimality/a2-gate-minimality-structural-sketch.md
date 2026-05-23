@@ -4,7 +4,7 @@ Status: convention adopted; theorem-track not yet promoted
 Track: structural-sketch track, not theorem track  
 Tracker: Issue #1  
 Convention status: path beta adopted for A2  
-A2 invariant subcase: cubic invariant  
+A2 invariant subcase: cubic invariant with explicit determinant formula  
 Scope: A2 and future An convention gate for the Heller-Dirac gate-minimality program
 
 ## Summary
@@ -17,7 +17,7 @@ For A2, this repository adopts path beta:
 A2 spatial target: SU(3)
 central class: Z/3, represented by omega I_3
 active space: C^3 defining representation
-invariant subcase: cubic invariant / determinant volume form
+invariant subcase: cubic invariant Omega(v1,v2,v3) = det[v1 v2 v3] = epsilon_ijk v1^i v2^j v3^k
 ```
 
 This is a convention adoption. It is not an A2 minimality proof.
@@ -31,7 +31,7 @@ The A1 theorem uses structural facts that interlock:
 | Local monodromy group | Z/2 | Z/3 |
 | Spatial target | Spin(3) ~= SU(2) | SU(3) |
 | Active-set space | C^2 | C^3 |
-| Active invariant | degree-2 symplectic form | degree-3 cubic invariant |
+| Active invariant | degree-2 symplectic form | degree-3 cubic invariant `Omega(v1,v2,v3) = epsilon_ijk v1^i v2^j v3^k` |
 
 A2 is theorem-track only after the open load-bearing conditions below are closed.
 
@@ -40,6 +40,20 @@ A2 is theorem-track only after the open load-bearing conditions below are closed
 Path beta promotes the spatial target with the singularity type. Under the ADE-Lie correspondence, A2 uses SU(3), with central Z/3.
 
 The adopted A2 invariant subcase is the cubic invariant, not Hermitian preservation and not doubled-space symplectic preservation.
+
+The defining-representation cubic datum is the SU(3)-invariant volume form:
+
+```text
+Omega(v1, v2, v3) = det[v1 v2 v3] = epsilon_ijk v1^i v2^j v3^k
+```
+
+Equivalently, if C-8 later formulates the active sector in adjoint coordinates, the expected cubic Casimir datum is:
+
+```text
+C3(X) = d_abc x^a x^b x^c
+```
+
+where `d_abc` are the symmetric SU(3) structure constants in Gell-Mann normalization. C-8 must choose and type the active-sector realization explicitly.
 
 The cubic invariant is the natural degree-3 analog of A1's degree-2 symplectic invariant. It is also the subcase that distinguishes the A2 center directly, rather than encoding A2 data into a fixed Spin(3) chassis.
 
@@ -85,7 +99,7 @@ C-6 is resolved to path beta for A2.
 Selected path: beta
 Selected A2 group: SU(3)
 Selected A2 center: Z/3
-Selected A2 invariant: cubic invariant
+Selected A2 invariant: cubic invariant Omega(v1,v2,v3) = epsilon_ijk v1^i v2^j v3^k
 ```
 
 A2 remains structural-sketch status until C-7 and C-8 are closed.
