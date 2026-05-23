@@ -10,6 +10,8 @@ This directory hosts the Heller-Dirac realization question: whether the gate-min
 
 Heller-Dirac owns this question because the question originates from the gate-minimality algebraic structure. Ownership here does not imply that Yang-Mills results are imported into Heller-Dirac.
 
+This directory is not a bridge claim. It is an explicit holding area for a question whose answer, if any, must be assigned later under the local boundary rules of the affected repositories.
+
 ## Question
 
 Does the gate-minimality algebraic structure documented in Heller-Dirac have an operational realization in lattice Yang-Mills?
