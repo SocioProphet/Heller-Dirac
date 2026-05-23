@@ -5,13 +5,24 @@ Track: structural-sketch track, not theorem track
 Tracker: Issue #1  
 Convention status: path beta adopted for A2  
 A2 invariant subcase: cubic invariant with explicit determinant formula  
-Scope: A2 and future An convention gate for the Heller-Dirac gate-minimality program
+Scope: historical Heller-Dirac adoption record for A2 and future An convention gate
+
+## Relocation note
+
+The current C-7 and C-8 proof-character obligations have been relocated to `SocioProphet/Heller-Godel`:
+
+```text
+SocioProphet/Heller-Godel/docs/gate-minimality/c7-su3-subgroup-classification-scope.md
+SocioProphet/Heller-Godel/docs/gate-minimality/c8-cubic-invariant-condition.md
+```
+
+This file remains in Heller-Dirac as the historical path-beta convention-adoption record. It should not be cited as the current owner of C-7 or C-8 closure work.
 
 ## Summary
 
 The A1 to An extension is not a single automatic theorem. It is a convention-dependent family of possible theorem programs.
 
-For A2, this repository adopts path beta:
+For A2, this repository adopted path beta:
 
 ```text
 A2 spatial target: SU(3)
@@ -33,7 +44,7 @@ The A1 theorem uses structural facts that interlock:
 | Active-set space | C^2 | C^3 |
 | Active invariant | degree-2 symplectic form | degree-3 cubic invariant `Omega(v1,v2,v3) = epsilon_ijk v1^i v2^j v3^k` |
 
-A2 is theorem-track only after the open load-bearing conditions below are closed.
+A2 is theorem-track only after the open load-bearing conditions below are closed in Heller-Godel.
 
 ## A.2 Adopted convention: path beta
 
@@ -53,7 +64,7 @@ Equivalently, if C-8 later formulates the active sector in adjoint coordinates, 
 C3(X) = d_abc x^a x^b x^c
 ```
 
-where `d_abc` are the symmetric SU(3) structure constants in Gell-Mann normalization. C-8 must choose and type the active-sector realization explicitly.
+where `d_abc` are the symmetric SU(3) structure constants in Gell-Mann normalization. The current C-8 formulation and any closure work belong in Heller-Godel.
 
 The cubic invariant is the natural degree-3 analog of A1's degree-2 symplectic invariant. It is also the subcase that distinguishes the A2 center directly, rather than encoding A2 data into a fixed Spin(3) chassis.
 
@@ -67,9 +78,11 @@ The following alternatives remain documented but are not the A2 theorem-track co
 
 ## A.4 Load-bearing conditions
 
+The current load-bearing C-7 and C-8 documents are Heller-Godel-owned.
+
 ### C-7: SU(3) closed connected subgroup classification obligation
 
-Status: active, load-bearing.
+Status: active, load-bearing, relocated to Heller-Godel.
 
 A future A2 theorem statement must use a complete closed connected subgroup classification for SU(3), then show which candidates are admissible under the A2 gate criteria.
 
@@ -77,7 +90,7 @@ This deliverable is not a re-derivation of the classification theorem. It is the
 
 ### C-8: cubic-invariant analog of condition (v)
 
-Status: active, load-bearing.
+Status: active, load-bearing, relocated to Heller-Godel.
 
 A future A2 theorem statement must formulate the cubic-invariant analog of A1 condition (v). It must define the preserved cubic datum on C^3, specify the orientation/volume-form choice, and explain how complex conjugation is handled because the defining SU(3) representation is not self-dual.
 
@@ -102,7 +115,7 @@ Selected A2 center: Z/3
 Selected A2 invariant: cubic invariant Omega(v1,v2,v3) = epsilon_ijk v1^i v2^j v3^k
 ```
 
-A2 remains structural-sketch status until C-7 and C-8 are closed.
+A2 remains structural-sketch status until C-7 and C-8 are closed in Heller-Godel.
 
 ## A.7 Proof skeleton under adopted path beta
 
@@ -114,7 +127,7 @@ Under path beta with SU(3) and cubic invariant:
 4. Verify SU(3) satisfies the adopted conditions.
 5. Conclude minimality inside the adopted convention only.
 
-This is a proof skeleton, not a proof.
+This is a proof skeleton, not a proof. Current C-7/C-8 proof work belongs in Heller-Godel.
 
 ## Non-claims
 
