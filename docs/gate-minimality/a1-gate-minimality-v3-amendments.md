@@ -12,6 +12,17 @@ This note records the v3 amendments required after review of the A1 gate-minimal
 
 The amendments are mechanical. They do not change the theorem target. They repair citation precision, move the terminal-object point from an open subclaim to a corollary, and tighten the Spin-c extension note.
 
+## Relocation note
+
+The A2 C-7 and C-8 proof-character obligations have been relocated to `SocioProphet/Heller-Godel`:
+
+```text
+SocioProphet/Heller-Godel/docs/gate-minimality/c7-su3-subgroup-classification-scope.md
+SocioProphet/Heller-Godel/docs/gate-minimality/c8-cubic-invariant-condition.md
+```
+
+This A1 amendment note remains in Heller-Dirac because it concerns A1 theorem-track amendment hygiene and is unaffected by the C-7/C-8 relocation.
+
 ## A1 unaffected by A2 path-beta adoption
 
 The A2 path-beta convention adopted in this lane does not change A1.
