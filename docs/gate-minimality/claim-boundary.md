@@ -78,6 +78,8 @@ It does not claim, and does not contribute to, any lattice gauge theory result, 
 
 `SocioProphet/yang-mills` Lane VIII operates on pure `SU(2)` under Reading Z: the `G2` subscript is the gluon condensate / action-density proxy `G^2`, not the exceptional Lie group and not an A2/SU(3) alignment.
 
+This boundary entry is local to Heller-Dirac. It is a pointer to the paired Yang-Mills boundary entry, not a central authority over the Yang-Mills repository.
+
 Crossing rule: any PR in either repository whose content would import, depend on, or claim coherence with the other repository's scope must add a corresponding local boundary entry in both repositories in the same PR sequence. Such a crossing must not merge in either repository until both local entries are present.
 
 Current Yang-Mills reference surfaces:
