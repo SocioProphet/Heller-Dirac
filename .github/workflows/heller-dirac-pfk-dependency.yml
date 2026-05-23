@@ -27,7 +27,7 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Validate PFK dependency, v0.2 apparatus, and gate-minimality guard
+      - name: Validate PFK dependency and v0.2 apparatus plus gate-minimality guard
         env:
           HELLER_GODEL_ROOT: ${{ github.workspace }}/Heller-Godel
         run: |
