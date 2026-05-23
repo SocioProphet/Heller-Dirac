@@ -1,4 +1,4 @@
-name: Heller-Dirac PFK Dependency Validation
+name: Heller-Dirac Validation
 
 on:
   pull_request:
@@ -27,9 +27,9 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Validate PFK dependency and v0.2 apparatus
+      - name: Validate PFK dependency, v0.2 apparatus, and gate-minimality guard
         env:
           HELLER_GODEL_ROOT: ${{ github.workspace }}/Heller-Godel
         run: |
           cd Heller-Dirac
-          python -m unittest tests/test_pfk_dependency.py -v
+          make validate
