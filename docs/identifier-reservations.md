@@ -23,16 +23,15 @@ This document controls the `HD-*` namespace for Heller-Dirac scaffold objects. A
 
 ## Hopf scaffold — HD-HA
 
-| Identifier range | Reserved scope |
-|---|---|
-| `HD-HA-001..010` | Hopf algebras, Hopf algebroids, bicrossed products, Connes-Moscovici, Connes-Kreimer, Hopf-cyclic cohomology |
-
-Initial named reservations:
-
-- `HD-HA-001` — Hopf action on spectral data
-- `HD-HA-002` — Connes-Moscovici transverse-geometry anchor
-- `HD-HA-003` — Connes-Kreimer renormalization anchor
-- `HD-HA-004` — Hopf-cyclic cohomology interface
+| Identifier | Scope | Status | Path |
+|---|---|---|---|
+| `HD-HA-001` | Hopf action on spectral data | active | `docs/hopf-scaffold/HD-HA-001-hopf-action-on-spectral-data.md` |
+| `HD-HA-002` | Connes-Moscovici transverse-geometry anchor | active | `docs/hopf-scaffold/HD-HA-002-connes-moscovici.md` |
+| `HD-HA-003` | Connes-Kreimer renormalization anchor | active | `docs/hopf-scaffold/HD-HA-003-connes-kreimer.md` |
+| `HD-HA-004` | Hopf-cyclic cohomology interface | active | `docs/hopf-scaffold/HD-HA-004-hopf-cyclic-cohomology.md` |
+| `HD-HA-005` | Birkhoff decomposition on Connes-Kreimer Hopf algebra | active | `docs/hopf-scaffold/HD-HA-005-birkhoff-decomposition.md` |
+| `HD-HA-006` | Riemann-Hilbert correspondence for perturbative renormalization | active | `docs/hopf-scaffold/HD-HA-006-riemann-hilbert.md` |
+| `HD-HA-007..010` | Hopf-cyclic computation interfaces and future Hopf scaffold | reserved | future PR |
 
 ## Time theory — HD-TM
 
@@ -63,37 +62,34 @@ Initial named reservations:
 
 ## Spectral apparatus — HD-SP
 
-| Identifier range | Reserved scope |
-|---|---|
-| `HD-SP-001..010` | Dirac operators, spectral action, distance formula, heat-kernel asymptotics, index-theoretic apparatus |
-
-Initial named reservations:
-
-- `HD-SP-001` — Dirac operator apparatus
-- `HD-SP-002` — spectral action vocabulary
-- `HD-SP-003` — Connes distance formula vocabulary
-- `HD-SP-004` — heat-kernel asymptotic interface
+| Identifier | Scope | Status | Path |
+|---|---|---|---|
+| `HD-SP-001` | spectral zeta function vocabulary | active | `docs/spectral/HD-SP-001-spectral-zeta.md` |
+| `HD-SP-002` | Stieltjes constants of spectral zeta | active | `docs/spectral/HD-SP-002-stieltjes-constants.md` |
+| `HD-SP-003` | heat-kernel asymptotic expansion and `gamma_E` | active | `docs/spectral/HD-SP-003-heat-kernel.md` |
+| `HD-SP-004` | Borel transform and Borel-Laplace resummation | active | `docs/spectral/HD-SP-004-borel-laplace.md` |
+| `HD-SP-005` | Sauzin alien-derivative normalization | active | `docs/spectral/HD-SP-005-alien-derivative.md` |
+| `HD-SP-006` | IR-renormalon Borel-plane singularity structure | active | `docs/spectral/HD-SP-006-ir-renormalon.md` |
+| `HD-SP-007..010` | future spectral-zeta and Borel-side computations | reserved | future PR |
 
 ## Fixtures — HD-EX
 
 | Identifier | Scope | Status | Path |
 |---|---|---|---|
 | `HD-EX-001` | circle spectral triple fixture | active | `docs/fixtures/HD-EX-001-circle-spectral-triple.md` |
-| `HD-EX-002` | free Dirac operator fixture | reserved | future PR |
-| `HD-EX-003` | Hopf-equivariant spectral triple fixture | reserved | future PR |
-| `HD-EX-004..005` | future fixtures | reserved | future PR |
+| `HD-EX-002` | Catalan A1 closed-form Borel-plane example | active | `docs/fixtures/HD-EX-002-catalan-a1.md` |
+| `HD-EX-003` | free Dirac operator fixture | reserved | future PR |
+| `HD-EX-004` | Hopf-equivariant spectral triple fixture | reserved | future PR |
+| `HD-EX-005` | future fixture | reserved | future PR |
 
 ## Methodology — HD-MTH
 
-| Identifier range | Reserved scope |
-|---|---|
-| `HD-MTH-001..005` | methodology declarations for Heller-Dirac scaffold |
-
-Initial named reservations:
-
-- `HD-MTH-001` — Heller-Dirac purpose declaration
-- `HD-MTH-002` — downstream citation discipline
-- `HD-MTH-003` — spectral/Hopf/modular non-transfer rule
+| Identifier | Scope | Status | Path |
+|---|---|---|---|
+| `HD-MTH-001` | `gamma_E` synthesis as universal first-subleading constant across four threads | active | `docs/methodology/HD-MTH-001-gamma-E-synthesis.md` |
+| `HD-MTH-002` | Hopf-side / Borel-side framework parallel | active | `docs/methodology/HD-MTH-002-hopf-borel-parallel.md` |
+| `HD-MTH-003` | Catalan A1 as Hopf-side / Borel-side bridge fixture | active | `docs/methodology/HD-MTH-003-catalan-bridge.md` |
+| `HD-MTH-004..005` | methodology declarations for promotion criteria and downstream citation discipline | reserved | future PR |
 
 ## Anti-seed — A-HD
 
@@ -103,8 +99,15 @@ Active anti-seed identifiers are defined in `docs/anti-seed-dirac.md`:
 - `A-HD-TM-001`
 - `A-HD-FT-001`
 - `A-HD-HA-001`
+- `A-HD-HA-005`
+- `A-HD-HA-006`
 - `A-HD-SP-001`
+- `A-HD-SP-004`
+- `A-HD-SP-005`
+- `A-HD-SP-006`
 - `A-HD-MTH-001`
+- `A-HD-MTH-002`
+- `A-HD-MTH-003`
 - `A-HD-EX-001`
 - `A-HD-FND-001`
 
