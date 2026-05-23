@@ -27,7 +27,7 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Validate canonical PFK dependency
+      - name: Validate PFK dependency and v0.2 apparatus
         env:
           HELLER_GODEL_ROOT: ${{ github.workspace }}/Heller-Godel
         run: |
