@@ -75,7 +75,7 @@ def main() -> None:
     need("boundary", boundary, "SU(N>=3) lattice mass-gap")
     need("boundary", boundary, "No PR may cross this boundary without an explicit ledger entry")
 
-    for token in ["validator skeleton", "semantically stale", "Harvest later", "Superseded"]:
+    for token in ["validator skeleton", "stale semantic checks", "Harvest later", "Superseded"]:
         need("audit", audit, token)
 
     for text_label, text in texts.items():
