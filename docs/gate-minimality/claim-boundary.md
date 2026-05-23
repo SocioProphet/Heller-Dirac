@@ -18,14 +18,25 @@ path beta + SU(3) + central Z/3 + cubic invariant
 
 This adoption resolves the A2 convention gate. It does not prove A2 minimality and does not promote A2 to theorem-track.
 
+## Relocation note
+
+The current C-7 and C-8 proof-character obligations have been relocated to `SocioProphet/Heller-Godel`:
+
+```text
+SocioProphet/Heller-Godel/docs/gate-minimality/c7-su3-subgroup-classification-scope.md
+SocioProphet/Heller-Godel/docs/gate-minimality/c8-cubic-invariant-condition.md
+```
+
+This reflects the corrected architecture: the gate-minimality pipeline at `p = 2` and `p = 3` is Heller-Godel content, part of the `chi_p` / `zeta_p` / proof-character framework. Heller-Dirac retains the historical path-beta adoption context, A1 amendment hygiene, redirect stubs, and local non-claim boundaries.
+
 ## A2 convention status
 
 A2 is currently:
 
 - an adopted path-beta structural convention;
-- a candidate theorem track only after C-7 and C-8 are closed;
+- a candidate theorem track only after C-7 and C-8 are closed in Heller-Godel;
 - a record that A1-to-An extension is convention-dependent;
-- explicitly scoped to structural gate-minimality inside Heller-Dirac.
+- historically scoped to structural gate-minimality in this Heller-Dirac adoption record.
 
 A2 is not currently:
 
@@ -46,8 +57,8 @@ Path alpha is retained only as an alternative documentation path: preserve Spin(
 ## Subclaim status
 
 - C-6: resolved to path beta for A2.
-- C-7: active and load-bearing. It must analyze the closed connected subgroup classification obligation for SU(3) under the adopted gate criteria.
-- C-8: active and load-bearing. It must formulate the cubic-invariant analog of A1 condition (v), including orientation and non-self-duality handling.
+- C-7: active and load-bearing in Heller-Godel. It must analyze the closed connected subgroup classification obligation for SU(3) under the adopted gate criteria.
+- C-8: active and load-bearing in Heller-Godel. It must formulate and close the cubic-invariant analog of A1 condition (v), including orientation and non-self-duality handling.
 - C-9: demoted to non-load-bearing path-alpha alternative documentation.
 
 ## Non-claims for this PR
@@ -74,7 +85,7 @@ path beta + SU(3) + central Z/3 + cubic invariant
 
 It does not claim, and does not contribute to, any lattice gauge theory result, mass-gap theorem, Borel-summability statement, continuum-limit construction, weak-coupling theorem, or asymptotic-freedom analysis.
 
-`SocioProphet/yang-mills` explicitly non-claims any `SU(N>=3)` lattice mass-gap result. SU(3) gate-minimality content from this repository does not appear in the operational theorem scope of that repository.
+`SocioProphet/yang-mills` explicitly non-claims any `SU(N>=3)` lattice mass-gap result. The exact boundary phrase is: SU(N>=3) lattice mass-gap is outside this repository's gate-minimality claim surface. SU(3) gate-minimality content from this repository does not appear in the operational theorem scope of that repository.
 
 `SocioProphet/yang-mills` Lane VIII operates on pure `SU(2)` under Reading Z: the `G2` subscript is the gluon condensate / action-density proxy `G^2`, not the exceptional Lie group and not an A2/SU(3) alignment.
 
@@ -86,14 +97,14 @@ Current Yang-Mills reference surfaces:
 
 - `SocioProphet/yang-mills` `docs/lane-viii-conventions.md` — Reading Z adoption.
 - `SocioProphet/yang-mills` `manuscripts/lane-viii-borel-laplace/v0.2.3-FRI/residue-hunt-scope.md` — pure `SU(2)` residue-hunt scope with no value admitted.
-- `SocioProphet/yang-mills` `docs/claim-boundary.md` — paired cross-repo boundary surface, to be added by the symmetric Yang-Mills PR.
+- `SocioProphet/yang-mills` `docs/claim-boundary.md` — paired cross-repo boundary surface.
 
 ## Substantive documents
 
 - `a1-gate-minimality-v3-amendments.md`
 - `a2-gate-minimality-structural-sketch.md`
-- `c7-su3-subgroup-classification-scope.md`
-- `c8-cubic-invariant-condition.md`
+- `c7-su3-subgroup-classification-scope.md` — redirect stub to Heller-Godel.
+- `c8-cubic-invariant-condition.md` — redirect stub to Heller-Godel.
 - `README.md`
 
-This file is the control surface over the lane. It governs what may be claimed from the gate-minimality documents until C-7 and C-8 are closed.
+This file is the control surface over the Heller-Dirac side of the lane. Current C-7/C-8 content is owned by Heller-Godel.
