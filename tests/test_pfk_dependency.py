@@ -29,7 +29,7 @@ HD_FND_FILES = {
     "HD-FND-010-hopf-action.md",
 }
 
-V02_REQUIRED_FILES = {
+V02_IDENTIFIER_FILES = {
     "docs/hopf-scaffold/HD-HA-001-hopf-action-on-spectral-data.md",
     "docs/hopf-scaffold/HD-HA-002-connes-moscovici.md",
     "docs/hopf-scaffold/HD-HA-003-connes-kreimer.md",
@@ -46,6 +46,9 @@ V02_REQUIRED_FILES = {
     "docs/methodology/HD-MTH-002-framework-parallel.md",
     "docs/methodology/HD-MTH-003-catalan-bridge.md",
     "docs/fixtures/HD-EX-002-catalan-a1.md",
+}
+
+V02_GOVERNANCE_FILES = {
     "docs/capture/capture-gap-matrix.md",
     "docs/scope/v0.2-non-claim-box.md",
 }
@@ -130,14 +133,15 @@ class TestPFKDependency(unittest.TestCase):
         self.assertIn("round geodesic metric", text)
 
     def test_v02_required_files_exist(self) -> None:
-        missing = sorted(path for path in V02_REQUIRED_FILES if not (ROOT / path).exists())
+        required = V02_IDENTIFIER_FILES | V02_GOVERNANCE_FILES
+        missing = sorted(path for path in required if not (ROOT / path).exists())
         self.assertFalse(missing, f"Missing v0.2 files: {missing}")
 
-    def test_v02_registry_lists_active_ids_and_paths(self) -> None:
+    def test_v02_registry_lists_active_ids_and_identifier_paths(self) -> None:
         text = (ROOT / "docs" / "identifier-reservations.md").read_text(encoding="utf-8")
         for identifier in sorted(V02_ACTIVE_IDS):
             self.assertIn(f"`{identifier}`", text)
-        for required_path in sorted(V02_REQUIRED_FILES):
+        for required_path in sorted(V02_IDENTIFIER_FILES):
             self.assertIn(f"`{required_path}`", text)
 
     def test_v02_anti_seed_entries_present(self) -> None:
