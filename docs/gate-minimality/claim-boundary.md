@@ -85,7 +85,7 @@ path beta + SU(3) + central Z/3 + cubic invariant
 
 It does not claim, and does not contribute to, any lattice gauge theory result, mass-gap theorem, Borel-summability statement, continuum-limit construction, weak-coupling theorem, or asymptotic-freedom analysis.
 
-`SocioProphet/yang-mills` explicitly non-claims any `SU(N>=3)` lattice mass-gap result. SU(3) gate-minimality content from this repository does not appear in the operational theorem scope of that repository.
+`SocioProphet/yang-mills` explicitly non-claims any `SU(N>=3)` lattice mass-gap result. The exact boundary phrase is: SU(N>=3) lattice mass-gap is outside this repository's gate-minimality claim surface. SU(3) gate-minimality content from this repository does not appear in the operational theorem scope of that repository.
 
 `SocioProphet/yang-mills` Lane VIII operates on pure `SU(2)` under Reading Z: the `G2` subscript is the gluon condensate / action-density proxy `G^2`, not the exceptional Lie group and not an A2/SU(3) alignment.
 
